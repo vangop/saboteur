@@ -1,0 +1,129 @@
+body{
+	font: 1em Verdana;
+	padding: 0;
+	margin: 5px;
+	color: Black;
+	background-color: WhiteSmoke;
+}
+div{
+	padding: 0;
+	margin: 0;
+}
+button{
+	cursor: pointer;
+	background-size: 80% 80%;
+	background-position: center;
+	background-repeat: no-repeat;
+	/*position: relative;*/
+	padding: 0;
+	margin: 0;
+	background-color: #d2c386;
+	border-radius: 20%;
+	border: 1px solid #85806f;
+	box-shadow: 1px 1px 2px rgba(0,0,0,0.6);
+	vertical-align: middle;
+}
+.hidden{
+	display: none;
+}
+#app{
+	background-color: #bcc;
+	/*background: -webkit-linear-gradient(top,#bbc, #558);*/
+	/*background: linear-gradient(top, #bbc, #558);*/
+	background: linear-gradient(to bottom, #a9e4f7 0%,#0fb4e7 100%);
+	min-width: 9em;
+	max-width: 25em;
+	margin: 1em auto;
+	box-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+	position: relative;
+	height: 90vh;
+
+}
+#app>header, #app>footer{
+	padding: 0 0.5em;
+	font-size: 0.5em;
+	color: WhiteSmoke;
+	background-color: #006;
+	box-shadow: 3px, 3px;
+	border: solid;
+}
+#app>footer{
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	left: 0;
+}
+.group{
+	border: solid;
+	border-color: whitesmoke;
+	/*min-height: 10%;*/
+}
+#list-container{
+	overflow: auto;	
+	height: 40%;
+}
+div.tools{
+	/*background: url("../img/buttons.png");*/
+	/*top: 0;*/
+	/*right: 0;*/
+	height: 100%;
+	float: right;
+	text-align: center;
+	/*position: absolute;*/
+	/*background-color: #000;*/
+	vertical-align: middle;
+}
+div.tools button{
+	width: 14px;
+	height: 14px;
+	opacity: 0;
+}
+button.del{
+	background-image: url("../img/del.png");
+	transition: all 0.5s ease;
+	/*right:0.25em;*/
+	/*bottom:0.25em;*/
+
+}
+button.edit{
+	background-image: url("../img/edit.png");
+	transition: all 0.5s ease;
+	/*right:2em;*/
+	/*bottom:0.25em;*/
+	/*background-position: 0,0;*/
+	/*background-size: 100% 100%;*/
+
+}
+#player-list  button{
+}
+#new-player-name{
+	font-size: 1em;
+	display: block;
+	width: 99%;
+}
+#player-list li{
+	position: relative;
+	list-style: none;
+	padding: 0.25em;
+	margin: 0.25em ;
+	background-color: beige;
+	border-radius: 4px;
+	box-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+	transition: all 0.2s ease;
+}
+#player-list li:hover button,
+#player-list li.selected button{
+	opacity: 1;
+	width: 24px;
+	height: 24px;
+}
+#player-list li.selected{
+	padding: 0.5em 0.5em;
+	margin: 0;
+	background-color: white;
+	border-radius: 6px;
+	border: 2px solid orange;
+}
+#player-list  {
+	padding: 0.5em 1em;
+}

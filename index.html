@@ -1,0 +1,39 @@
+<!doctype html>
+<head>
+    <meta charset="utf-8">
+    <title>Saboteur</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <section id="app">
+        <header>Saboteur</header>
+        <div class="group">
+           <label for="new-player-name">Добавить игрока</label>
+           <input type="text" title="Add new player" placeholder="Имя" id="new-player-name"/>
+       </div>
+       <div class="group" id="list-container">
+           <ul id="player-list"></ul>
+       </div>
+       <div class="group">
+           <button id="roll">Выбрать самородки</button>
+       </div>
+       <div id="templates" class="hidden">
+         <ul id="player-template">
+            <li>
+               <span class="player-name"></span>
+               <input type="text" placeholder="Имя игрока" class="player-name-edit hidden"/>
+               <div class="tools">
+                <button class="edit" title="изменить"></button>
+                <button class="del" title="удалить"></button>
+            </div>
+        </li>
+    </ul>
+</div>
+<footer></footer>
+</section>
+<!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> -->
+<script type="text/javascript">
+    window.jQuery || document.write('<script src="js/jquery-1.11.1.js"><\/script>');
+</script>
+<script src="js/main.js"></script>
+</body>
